@@ -279,13 +279,7 @@ main {
 
                 ul {
                     width: 380px;
-
                     li {
-                        list-style: none;
-                        color: white;
-                        font-size: var(--h1);
-                        user-select: none;
-
                         a {
                             display: none;
                         }
@@ -296,25 +290,15 @@ main {
     }
 
     main { 
+        max-height: 100vh;
+
         .container {
             max-width: 380px;
 
             .hero {
                 display: flex;
-                height: 844px;
-
-                h1 {
-                    font-size: 75px;
-                    font-family: ggsans-semibold;
-                    margin-bottom: 10px;
-                    user-select: none;
-                }
-
-                p {
-                    font-size: 20px;
-                    margin-bottom: 20px;
-                    user-select: none;
-                }
+                align-items: top;
+                max-height: 90vh;
             }
         }
     }
