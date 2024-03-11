@@ -269,3 +269,70 @@ main {
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+    header {
+        .container {
+            max-width: 360px;
+
+            nav {
+
+                ul {
+                    width: 380px;
+
+                    li {
+                        list-style: none;
+                        color: white;
+                        font-size: var(--h1);
+                        user-select: none;
+
+                        a {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main { 
+        .container {
+            max-width: 380px;
+
+            .hero {
+                display: flex;
+                height: 844px;
+
+                h1 {
+                    font-size: 75px;
+                    font-family: ggsans-semibold;
+                    margin-bottom: 10px;
+                    user-select: none;
+                }
+
+                p {
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                    user-select: none;
+                }
+            }
+        }
+    }
+
+    .buttons {
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+            align-items: start;
+
+            li {
+                list-style: none;
+            }
+        }
+    }
+
+    .discord-embed {
+        display: none;
+    }
+}
